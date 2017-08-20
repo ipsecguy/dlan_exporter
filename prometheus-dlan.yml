@@ -1,0 +1,9 @@
+  - job_name: 'dlan'
+    scrape_interval: 60s
+    target_groups:
+      - targets: ['127.0.0.1:9999']
+        labels:
+          instance: 'dlan'
+    metrics_path: /proxy
+    params:
+      module: [dlan]

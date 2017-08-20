@@ -1,0 +1,6 @@
+modules:
+  dlan:
+    method: exec
+    timeout: 8s
+    exec:
+      command: /usr/local/bin/dlan.sh
